@@ -1,143 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
 
-        <meta name="author" content="Nagendra Mahesh">
-        <meta name="robots" content="index,follow">
-        <meta name="revisit-after" content="5 days">
-        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
+    <title>Portfolio</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
+    </div>
+    <div class="uk-navbar-right">
 
-        <meta http-equiv="Expires" content="0">
-        <meta http-equiv="Pragma" content="no-cache">
-        <meta http-equiv="Cache-Control" content="no-cache">
+        <ul class="uk-navbar-nav uk-light">
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
 
-        <title>Countdown</title>
+        </ul>
 
-        <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style/main.css">
-    </head>
-    <body>
-        <div class="bgimg filter">
-            <div class="countdown">
-                <span id="days" class="timevalue">--</span>d
-                <span id="hours" class="timevalue">--</span>h
-                <span id="minutes" class="timevalue">--</span>m
-                <span id="seconds" class="timevalue">--</span>s
-            </div>
-            <footer>
-                <a href="https://github.com/SuperdudeSudhir/SuperdudeSudhir.github.io" target="_blank">SuperdudeSudhir</a> | 2024
-            </footer>
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
+            <li class="uk-active"><a href="mailto:">Contact</a></li> <!--- change to ur email-->
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm John Doe, a front-end web developer, <br>graphic designer, and an UI/UX designer.</h1>
+    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+
+
+</section>
+
+<!-- Home Ends -->
+<br>
+
+
+<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+<!-- Change here to ur paragraph -->
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend posuere tortor vel lobortis. Morbi pretium in sapien non suscipit. Nam ac efficitur enim. Vestibulum accumsan erat sit amet nulla commodo, nec varius felis aliquam. Aliquam suscipit mauris lacus, at euismod purus tempor aliquam. Donec varius sem nisl. Fusce augue tortor, hendrerit at elit quis, aliquet blandit eros. Nam gravida sem velit, eu placerat nunc commodo ut. <br><br>Maecenas ultricies magna nec nisi egestas, in posuere velit tincidunt. Nam quis turpis non ligula dapibus bibendum sit amet at felis. Vestibulum ornare tempor nulla, quis sodales ex consequat vel. Morbi sollicitudin ligula eget mattis euismod. Nulla scelerisque malesuada arcu a vulputate. Phasellus ac lectus consequat, eleifend libero id, tincidunt lectus. Sed tempus gravida odio, sed semper neque aliquet imperdiet.</p>
+<a href="" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="instagram"></a> &nbsp;<a href="" class="uk-light uk-button-text" uk-icon="dribbble"></a> &nbsp;<a href="" class="uk-button-text uk-light" uk-icon="github"></a> &nbsp;<a href="" class=" uk-light uk-button-text" uk-icon="linkedin"></a>
+
+<!-- About Me Ends -->
+
+
+
+
+</section>
+
+<!-- Projects Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
+<p class="uk-margin-xlarge-left">Projects that i've been working on</p>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <!-- Change all of this to ur projects -->
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Project Name</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a class="uk-button-text uk-text-decoration-none" href="">
+            <span uk-icon="icon: link">
+            </span> Website Link </a>
         </div>
-    </body>
-    <script src="js/main.js"></script>
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>Project Name</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="uk-button-text uk-text-decoration-none" href="">
+                <span uk-icon="icon: link">
+                </span> Website Link </a>
+            </div></div>
+
+
+
+    <br>
+
+
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+</div>
+<!-- Projects Section Ends -->
+    
+</body>
 </html>
-
-<style>
-	body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.bgimg {
-    background-image: url('../img/background.jpg');
-    opacity: 0.8;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-@media only screen and (max-device-width: 480px) {
-    .bgimg {
-        background-image: url('../img/background_mobile.jpg');
-        opacity: 0.8;
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-    }
-}
-
-.filter {
-    -webkit-filter: contrast(140%) sepia(50%);
-    filter: contrast(140%) sepia(50%);
-}
-
-.filter::before {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    pointer-events: none;
-    mix-blend-mode: multiply;
-    background: rgba(161, 44, 199, 0.31);
-}
-
-.countdown {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 4em;
-    color: #E5E5E5;
-    background-color:rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    line-height: 1.3;
-    padding: 5px 10px 5px 10px;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: 100;
-}
-
-.timevalue {
-    font-weight: 700;
-    color: rgb(236, 240, 159);
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    right: 2%;
-    text-align: center;
-    font-size: 1em;
-    color: #E5E5E5;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: 300;
-    margin-bottom: 2%;
-}
-
-footer > a {
-    color: #E5DF1C;
-}
-</style>
-
-<script>
-
-	// Set the timestamp we're counting down to
-var countDownDate = new Date("2024-01-25T00:00:00Z");
-var daysElement = document.getElementById('days');
-var hoursElement = document.getElementById('hours');
-var minutesElement = document.getElementById('minutes');
-var secondsElement = document.getElementById('seconds');
-
-// Update the count down every 1 second
-setInterval(function() {
-    // Get current date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now and the countdown date
-    var distance = Math.abs(countDownDate - now);
-
-    // Time calculations for days, hours, minutes and seconds
-    daysElement.innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
-    hoursElement.innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    minutesElement.innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    secondsElement.innerText = Math.floor((distance % (1000 * 60)) / 1000);
-}, 1000);
-</script>
