@@ -1,6 +1,6 @@
 // Replace this with the Google Drive link to the latest CV.
 const siteConfig = {
-  cvUrl: "YOUR_GOOGLE_DRIVE_CV_LINK_HERE"
+  cvUrl: "https://drive.google.com/file/d/1YiZH-6h-_T7i0eKzjcq7Q-Rqju7mZeZn/view?usp=sharing"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
